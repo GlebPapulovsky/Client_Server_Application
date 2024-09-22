@@ -28,12 +28,12 @@ public class Server {
                     writer.println("How many years old are you?");
                     userInfo.setAge(Integer.parseInt(reader.readLine()));
                     if (userInfo.getAge() < 14) {
-                        writer.printf("Welcome to the kids area, %s! Let's play!",userInfo.getName() );
+                        writer.printf("Welcome to the kids area, %s! Let's play!", userInfo.getName());
                     } else {
                         writer.printf("Welcome to the adult zone, %s! Have a good rest, or a good working day!", userInfo.getName());
                     }
                     writer.println(userInfo.printInfo());
-                    while(true){
+                    while (true) {
                         writer.println("Print 'exit' for end.");
                     }
 
